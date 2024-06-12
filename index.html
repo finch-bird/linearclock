@@ -26,7 +26,7 @@
         .container {
             position: relative;
             width: 80%;
-            height: 70px;
+            height: 50px; /* уменьшенная высота */
             background: #444;
             border: 1px solid #555;
             border-radius: 20px;
@@ -228,17 +228,17 @@
         <div class="progress" id="progress"></div>
         <div class="indicator" id="indicator"></div>
         <div class="ticks">
-            <div class="tick" style="left: 0%;"><span class="time-label">9</span></div>
-            <div class="tick" style="left: 10%;"><span class="time-label">10</span></div>
-            <div class="tick" style="left: 20%;"><span class="time-label">11</span></div>
-            <div class="tick" style="left: 30%;"><span class="time-label">12</span></div>
-            <div class="tick" style="left: 40%;"><span class="time-label">13</span></div>
-            <div class="tick" style="left: 50%;"><span class="time-label">14</span></div>
-            <div class="tick" style="left: 60%;"><span class="time-label">15</span></div>
-            <div class="tick" style="left: 70%;"><span class="time-label">16</span></div>
-            <div class="tick" style="left: 80%;"><span class="time-label">17</span></div>
-            <div class="tick" style="left: 90%;"><span class="time-label">18</span></div>
-            <div class="tick" style="left: 100%;"><span class="time-label">19</span></div>
+            <div class="tick" style="left: 0%;"><span class="time-label">8</span></div>
+            <div class="tick" style="left: 10%;"><span class="time-label">9</span></div>
+            <div class="tick" style="left: 20%;"><span class="time-label">10</span></div>
+            <div class="tick" style="left: 30%;"><span class="time-label">11</span></div>
+            <div class="tick" style="left: 40%;"><span class="time-label">12</span></div>
+            <div class="tick" style="left: 50%;"><span class="time-label">13</span></div>
+            <div class="tick" style="left: 60%;"><span class="time-label">14</span></div>
+            <div class="tick" style="left: 70%;"><span class="time-label">15</span></div>
+            <div class="tick" style="left: 80%;"><span class="time-label">16</span></div>
+            <div class="tick" style="left: 90%;"><span class="time-label">17</span></div>
+            <div class="tick" style="left: 100%;"><span class="time-label">18</span></div>
         </div>
     </div>
     <div class="footer">(c) z4kk</div>
@@ -249,9 +249,9 @@
             const progress = document.getElementById('progress');
             const now = new Date();
             const start = new Date();
-            start.setHours(9, 0, 0, 0);
+            start.setHours(8, 0, 0, 0);
             const end = new Date();
-            end.setHours(19, 0, 0, 0);
+            end.setHours(18, 0, 0, 0);
 
             if (now >= start && now <= end) {
                 const totalMinutes = (end - start) / 60000;
